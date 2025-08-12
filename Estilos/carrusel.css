@@ -1,0 +1,187 @@
+.sponsors {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sponsors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Carrusel Responsive */
+.carousel {
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    
+    border-radius: 20px;
+    
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+    width: 120px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Grid de patrocinadores (fallback si el carrusel no carga) */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.sponsor-grid img {
+    width: 80%;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Efecto máquina de escribir con degradado */
+.typewriter {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #55A453, #87D68D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: fit-content;
+    margin: 20px auto;
+    animation: blink 0.7s infinite;
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Animación del carrusel */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Para pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+    .carousel img {
+        width: 150px;
+        max-height: 100px;
+    }
+    .typewriter {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .carousel img {
+        width: 120px;
+        max-height: 80px;
+    }
+    .maquina {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(90deg, #55A453, #87D68D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: normal; /* Permite que el texto se divida */
+        word-break: break-word;
+        width: 80%; /* Ajusta el ancho del texto */
+        max-width: 600px;
+        margin: 20px auto;
+        animation: blink 0.7s infinite;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 767px) {
+    .carousel img {
+        width: 100px;
+        max-height: 70px;
+    }
+    .maquina {
+        font-size: 5px;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(90deg, #55A453, #87D68D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: normal; /* Permite el salto de línea */
+        word-break: break-word; /* Rompe palabras largas si es necesario */
+        width: 90%; /* Ajusta el ancho para móviles */
+        max-width: 320px;
+        margin: 20px auto;
+        animation: blink 0.7s infinite;
+    }
+    .carousel {
+        max-width: 100%;
+    }
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Para tablets */
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        text-align: center; /* Centrar el texto en móviles */
+        padding: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

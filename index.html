@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga de Atletismo del Magdalena</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/animations.css">
+    <link rel="stylesheet" href="Estilos/responsive.css">
+    <link rel="stylesheet" href="Estilos/carrusel.css">
+    <link rel="stylesheet" href="Estilos/css.css">
+    <link rel="icon" href="img/logoligadelmagdalena.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logoligadelmagdalena.png" alt="Logo Liga de Atletismo del Magdalena" class="logo">
+                <div class="logo-text">
+                    <h1>Liga de Atletismo</h1>
+                    <h2>Magdalena</h2>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html" class="active">Inicio</a></li>
+                    <li class="menu-item has-submenu">
+                      
+                    </li>
+                    <li class="menu-item has-submenu">
+                       <a href="#profile">Área Deportiva <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#profile">Escuela de iniciacion</a></li>
+                            <li><a href="#profile">Organizacion de eventos de pista y de calle</a></li>
+                            <li><a href="#profile">Juzgamiento de Atletismo</a></li>
+                       
+                        </ul>
+                    </li>
+                    
+                      <li class="menu-item"><a href="liga.html">Liga</a></li>
+                    <li class="menu-item"><a href="#">Entrenadores</a></li>
+                    <li class="menu-item"><a href="comunicacion.html">Comunicación</a></li>
+                    <li class="menu-item"><a href="disciplinas.html">Disciplinas</a></li>
+                   <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                    <!--<li class="menu-item close-menu" id="menu-close"><a href="#">✖ Cerrar</a></li>
+                    <li class="menu-item"><a href="inscripciones.html" class="btn-inscripcion active">Inscripciones</a></li>-->
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2 class="animate-text">Formando Campeones</h2>
+                    <p class="animate-text">Descubre el potencial atlético del Magdalena</p>
+                    <a href="inscripciones.html" class="btn animate-text">Únete a nosotros</a>
+                </div>
+                <div class="slide-image" style="background-image: url('img/salidapartidor.JPG');"></div>
+            </div>
+            <div class="slide">
+                 <div class="slide-content">
+                    <h2>Excelencia Deportiva</h2>
+                    <p>Entrenamiento de alto rendimiento para atletas de todas las edades</p>
+                    <a href="area-deportiva.html" class="btn">Conoce nuestras disciplinas</a>
+                </div>
+                <div class="slide-image" style="background-image: url('img/estrella-saltando-2.jpg');" ></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Competencias Nacionales</h2>
+                    <p>Representando con orgullo al departamento del Magdalena</p>
+                    <a href="comunicacion.html" class="btn">Ver resultados</a>
+                </div>
+                <div class="slide-image" style="background-image: url('img/slider3.jpg');"></div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Disciplinas -->
+    <section class="disciplines">
+        <div class="container">
+            <h2 class="section-title">Nuestras Disciplinas</h2>
+            <div class="disciplines-grid">
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Velocidad</h3>
+                   
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Fondo</h3>
+               
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                    </div>
+                    <h3>Saltos</h3>
+               
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Lanzamientos</h3>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Services Section -->
+        <section class="services-section" id="profile">
+            <div class="container">
+                <div class="section-header">
+                    <br>
+                    
+                    <center><h2>Nuestros Servicios</h2></center>
+
+                    <br>
+                   
+                </div>
+                <div class="services-grid" id="profile">
+                    <div id="escuela" class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Escuela de Iniciación</h3>
+                        <p>Programa integral para niños y jóvenes que desean comenzar en el atletismo. Desarrollamos las capacidades básicas y técnicas fundamentales.</p>
+                        <ul class="service-features">
+                            <li>Edades de 6 a 16 años</li>
+                            <li>Entrenamiento 3 veces por semana</li>
+                            <li>Equipamiento incluido</li>
+                            <li>Competencias regionales</li>
+                        </ul>
+                    </div>
+
+                    <div id="eventos-pista" class="service-card" id="profile">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Organización de Eventos</h3>
+                        <p>Organizamos eventos de pista y calle con los más altos estándares internacionales y tecnología de cronometraje profesional.</p>
+                        <ul class="service-features">
+                            <li>Eventos regionales y nacionales</li>
+                            <li>Cronometraje automático</li>
+                            <li>Certificación oficial</li>
+                            <li>Transmisión en vivo</li>
+                        </ul>
+                    </div>
+
+                    <div id="juzgamiento" class="service-card" id="profile">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Juzgamiento en Atletismo</h3>
+                        <p>Formación y certificación de jueces oficiales de atletismo bajo normativas de World Athletics y la Federación Colombiana.</p>
+                        <ul class="service-features">
+                            <li>Certificación oficial</li>
+                            <li>Cursos teórico-prácticos</li>
+                            <li>Actualización normativa</li>
+                            <li>Práctica en eventos reales</li>
+                        </ul>
+                    </div>
+
+                    <div id="programas" class="service-card" id="profile">
+                        <div class="service-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Programas Institucionales</h3>
+                        <p>Programas especiales en alianza con instituciones educativas y gubernamentales para masificar el atletismo.</p>
+                        <ul class="service-features">
+                            <li>Atletismo escolar</li>
+                            <li>Deporte social</li>
+                            <li>Capacitación docente</li>
+                            <li>Eventos institucionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+     <!-- Sección de Noticias -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="news-carousel" id="noticias-container">
+              
+                <!-- Las noticias se cargarán dinámicamente desde noticias.json -->
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-news"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-news"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="text-center">
+                <a href="comunicacion.html" class="btn">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Mapa de Eventos -->
+    <section class="events-map">
+        <div class="container">
+            <h2 class="section-title">Próximos Eventos</h2>
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="event-list">
+                    <div class="event-item" data-lat="11.2404" data-lng="-74.2110">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Carrera 10K Santa Marta</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Bahía de Santa Marta</p>
+                            <p><i class="fas fa-clock"></i> 7:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="event-item" data-lat="11.2300" data-lng="-74.1200">
+                        <div class="event-date">
+                            <span class="day">10</span>
+                            <span class="month">JUL</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Campeonato Departamental</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Estadio Eduardo Santos</p>
+                            <p><i class="fas fa-clock"></i> 8:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="event-item" data-lat="11.1800" data-lng="-74.2300">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">AGO</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Trail Running Inca Inca</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Sierra Nevada</p>
+                            <p><i class="fas fa-clock"></i> 6:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Sección Nuestro Terreno -->
+    <section class="our-territory">
+        <div class="container">
+            <h2 class="section-title">Nuestro Terreno</h2>
+            <div class="territory-scroll">
+                <div class="territory-item">
+                    <div class="territory-image">
+                        <img src="img/miguel.webp"  alt="Inicio Ruta Inca Inca">
+                    </div>
+                    <div class="territory-content">
+                        <h3></h3>
+                        <p></p>
+                        <div class="altitude-chart">
+                            <div class="altitude-point" style="height: 20%"></div>
+                        </div>
+                        <span class="altitude">600m</span>
+                    </div>
+                </div>
+                <div class="territory-item">
+                    <div class="territory-image">
+                        <img src="img/estrella-salto.jpg" alt="Ascenso Inca Inca">
+                    </div>
+                    <div class="territory-content">
+                        <h3></h3>
+                        <p></p>
+                        <div class="altitude-chart">
+                            <div class="altitude-point" style="height: 40%"></div>
+                        </div>
+                        <span class="altitude">1200m</span>
+                    </div>
+                </div>
+                <div class="territory-item">
+                    <div class="territory-image">
+                        <img src="img/yajaira-foto.jpg" width="100%" alt="Cima Inca Inca">
+                    </div>
+                    <div class="territory-content">
+                        <h3></h3>
+                        <p></p>
+                        <div class="altitude-chart">
+                            <div class="altitude-point" style="height: 80%"></div>
+                        </div>
+                        <span class="altitude">2400m</span>
+                    </div>
+                </div>
+                <div class="territory-item">
+                    <div class="territory-image">
+                        <img src="img/foto-niñas-saliendo-de-los-100-metros.jpg" alt="Descenso Inca Inca">
+                    </div>
+                    <div class="territory-content">
+                        <h3></h3>
+                        <p></p>
+                        <div class="altitude-chart">
+                            <div class="altitude-point" style="height: 30%"></div>
+                        </div>
+                        <span class="altitude">900m</span>
+                    </div>
+                </div>
+                <div class="territory-path"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Inscripción Rápida -->
+    <section class="quick-registration">
+        <div class="container">
+            <div class="registration-content">
+                <h2>¿Listo para unirte a nosotros?</h2>
+                <p>Forma parte de la Liga de Atletismo del Magdalena y desarrolla tu potencial deportivo.</p>
+                <button id="open-registration" class="btn btn-large">Inscríbete ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Inscripción -->
+    <div class="modal" id="registration-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Formulario de Inscripción</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="disciplina">Disciplina de interés</label>
+                    <select id="disciplina" name="disciplina" required>
+                        <option value="">Selecciona una disciplina</option>
+                        <option value="velocidad">Velocidad</option>
+                        <option value="fondo">Fondo</option>
+                        <option value="saltos">Saltos</option>
+                        <option value="lanzamientos">Lanzamientos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experiencia">Experiencia previa</label>
+                    <textarea id="experiencia" name="experiencia" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-block">Enviar inscripción</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+              
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 27 #7-32, Santa Marta</p>
+                    <p><i class="fas fa-phone"></i> +57 (5) 421-5678</p>
+                    <p><i class="fas fa-envelope"></i> contacto@atletismomagdalena.co</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="liga.html">Liga</a></li>
+                        <li><a href="area-deportiva.html">Área Deportiva</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/atletismomagdalena" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@atletismomagdalena" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://facebook.com/atletismomagdalena" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/atletismomagdalena" target="_blank" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sponsors">
+                <h3>Patrocinadores</h3>
+                
+                <!-- Carrusel de patrocinadores -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="img/image-removebg-preview.png" alt="Patrocinador 1">
+                        <img src="img/image-removebg-preview.png" alt="Patrocinador 2">
+                        <img src="img/image-removebg-preview.png" alt="Patrocinador 3">
+                        <img src="img/image-removebg-preview.png" alt="Patrocinador 4">
+                        <img src="img/image-removebg-preview.png" alt="Patrocinador 5">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Organizado por la Liga del Magdalena &copy; 2023. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script/main.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/darkmode.js"></script>
+</body>
+</html>

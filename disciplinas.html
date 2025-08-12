@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas - Liga de Atletismo del Magdalena</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <link rel="icon" href="img/logoligadelmagdalena.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logoligadelmagdalena.png" alt="Logo Liga de Atletismo del Magdalena" class="logo">
+                <div class="logo-text">
+                    <h1>Liga de Atletismo</h1>
+                    <h2>Magdalena</h2>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                    <li class="menu-item"><a href="disciplinas.html">Disciplinas</a></li>
+                    <li class="menu-item"><a href="comunicacion.html">Comunicación</a></li>
+                      <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                  <!--<li class="menu-item"><a href="inscripciones.html" class="btn-inscripcion active">Inscripciones</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section class="hero-disciplinas">
+            <div class="container">
+                <h1>Disciplinas del Atletismo</h1>
+                <p>Conoce todas las modalidades que practicamos en nuestra liga</p>
+            </div>
+        </section>
+
+        <section class="disciplinas-nav">
+            <div class="container">
+                <div class="disciplinas-tabs">
+                    <button class="tab-btn active" data-category="carreras">Carreras</button>
+                    <button class="tab-btn" data-category="saltos">Saltos</button>
+                    <button class="tab-btn" data-category="lanzamientos">Lanzamientos</button>
+                    <button class="tab-btn" data-category="marcha">Marcha</button>
+                    <button class="tab-btn" data-category="combinadas">Combinadas</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="disciplinas-content">
+            <div class="container">
+                <!-- Carreras -->
+                <div class="disciplina-category active" id="carreras">
+                    <h2>Carreras de Pista y Calle</h2>
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card">
+                            <img src="img/100-metros-planos.jpg" alt="100 metros planos">
+                            <div class="disciplina-info">
+                                <h3>100 metros planos</h3>
+                                <p>La carrera más rápida del atletismo. Los atletas recorren 100 metros en línea recta a máxima velocidad.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Distancia:</strong> 100 metros</li>
+                                    <li><strong>Récord Mundial M:</strong> 9.58s (Usain Bolt)</li>
+                                    <li><strong>Récord Mundial F:</strong> 10.49s (Florence Griffith)</li>
+                                    <li><strong>Superficie:</strong> Pista sintética</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/400-metros-planos.jpg" alt="400 metros planos">
+                            <div class="disciplina-info">
+                                <h3>400 metros planos</h3>
+                                <p>Una vuelta completa a la pista que combina velocidad y resistencia anaeróbica.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Distancia:</strong> 400 metros</li>
+                                    <li><strong>Récord Mundial M:</strong> 43.03s (Wayde van Niekerk)</li>
+                                    <li><strong>Récord Mundial F:</strong> 47.60s (Marita Koch)</li>
+                                    <li><strong>Característica:</strong> Una vuelta completa</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/1500-metros-planos.webp" alt="1500 metros">
+                            <div class="disciplina-info">
+                                <h3>1500 metros</h3>
+                                <p>Carrera de medio fondo que requiere estrategia, velocidad y resistencia.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Distancia:</strong> 1500 metros</li>
+                                    <li><strong>Récord Mundial M:</strong> 3:26.00 (Hicham El Guerrouj)</li>
+                                    <li><strong>Récord Mundial F:</strong> 3:50.07 (Genzebe Dibaba)</li>
+                                    <li><strong>Vueltas:</strong> 3¾ vueltas a la pista</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/maraton.webp" alt="Maratón">
+                            <div class="disciplina-info">
+                                <h3>Maratón</h3>
+                                <p>La carrera de resistencia más emblemática, 42.195 kilómetros de pura resistencia.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Distancia:</strong> 42.195 km</li>
+                                    <li><strong>Récord Mundial M:</strong> 2:01:09 (Kelvin Kiptum)</li>
+                                    <li><strong>Récord Mundial F:</strong> 2:11:53 (Brigid Kosgei)</li>
+                                    <li><strong>Superficie:</strong> Calle/Ruta</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saltos -->
+                <div class="disciplina-category" id="saltos">
+                    <h2>Saltos</h2>
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card">
+                            <img src="img/salto-largo.webp" alt="Salto largo">
+                            <div class="disciplina-info">
+                                <h3>Salto Largo</h3>
+                                <p>Los atletas corren por una pista de impulso y saltan lo más lejos posible en un foso de arena.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 8.95m (Mike Powell)</li>
+                                    <li><strong>Récord Mundial F:</strong> 7.52m (Galina Chistyakova)</li>
+                                    <li><strong>Pista impulso:</strong> 40-45 metros</li>
+                                    <li><strong>Foso:</strong> Arena fina</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/salto-alto.jfif" alt="Salto alto">
+                            <div class="disciplina-info">
+                                <h3>Salto Alto</h3>
+                                <p>Disciplina donde se busca sobrepasar una barra horizontal a la mayor altura posible.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 2.45m (Javier Sotomayor)</li>
+                                    <li><strong>Récord Mundial F:</strong> 2.09m (Stefka Kostadinova)</li>
+                                    <li><strong>Técnica:</strong> Fosbury Flop</li>
+                                    <li><strong>Colchón:</strong> Seguridad en la caída</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/salto-con-pertiga.jfif" alt="Salto con pértiga">
+                            <div class="disciplina-info">
+                                <h3>Salto con Pértiga</h3>
+                                <p>Utilizando una pértiga flexible, los atletas se impulsan para superar grandes alturas.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 6.23m (Armand Duplantis)</li>
+                                    <li><strong>Récord Mundial F:</strong> 5.06m (Yelena Isinbayeva)</li>
+                                    <li><strong>Pértiga:</strong> Fibra de carbono</li>
+                                    <li><strong>Longitud pista:</strong> 40-45 metros</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/salto-triple.jfif" alt="Salto triple">
+                            <div class="disciplina-info">
+                                <h3>Salto Triple</h3>
+                                <p>Secuencia de tres saltos: hop (mismo pie), step (otro pie) y jump (foso de arena).</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 18.29m (Jonathan Edwards)</li>
+                                    <li><strong>Récord Mundial F:</strong> 15.50m (Inessa Kravets)</li>
+                                    <li><strong>Secuencia:</strong> Hop-Step-Jump</li>
+                                    <li><strong>Técnica:</strong> Coordinación de fases</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lanzamientos -->
+                <div class="disciplina-category" id="lanzamientos">
+                    <h2>Lanzamientos</h2>
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card">
+                            <img src="img/lanzamiento-jabalina-.jfif" alt="Lanzamiento de jabalina">
+                            <div class="disciplina-info">
+                                <h3>Lanzamiento de Jabalina</h3>
+                                <p>Los atletas lanzan una jabalina lo más lejos posible con técnica específica y gran coordinación.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 98.48m (Jan Železný)</li>
+                                    <li><strong>Récord Mundial F:</strong> 72.28m (Barbora Špotáková)</li>
+                                    <li><strong>Peso jabalina M:</strong> 800g</li>
+                                    <li><strong>Peso jabalina F:</strong> 600g</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/lanzamiento-de-disco.webp" alt="Lanzamiento de disco">
+                            <div class="disciplina-info">
+                                <h3>Lanzamiento de Disco</h3>
+                                <p>Desde un círculo de lanzamiento, se impulsa un disco con movimiento rotatorio.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 74.08m (Jürgen Schult)</li>
+                                    <li><strong>Récord Mundial F:</strong> 76.80m (Gabriele Reinsch)</li>
+                                    <li><strong>Peso disco M:</strong> 2kg</li>
+                                    <li><strong>Peso disco F:</strong> 1kg</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/lanzamiento-de-martillo.webp" alt="Lanzamiento de martillo">
+                            <div class="disciplina-info">
+                                <h3>Lanzamiento de Martillo</h3>
+                                <p>Se lanza una bola de metal unida a un cable mediante giros para generar velocidad.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 86.74m (Yuriy Sedykh)</li>
+                                    <li><strong>Récord Mundial F:</strong> 82.98m (Anita Włodarczyk)</li>
+                                    <li><strong>Peso total M:</strong> 7.26kg</li>
+                                    <li><strong>Peso total F:</strong> 4kg</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/lanzamiento-de-bala.webp" alt="Lanzamiento de bala">
+                            <div class="disciplina-info">
+                                <h3>Lanzamiento de Bala</h3>
+                                <p>Desde un círculo, se empuja una bala de metal con técnica de deslizamiento o rotación.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 23.37m (Randy Barnes)</li>
+                                    <li><strong>Récord Mundial F:</strong> 22.63m (Natalya Lisovskaya)</li>
+                                    <li><strong>Peso bala M:</strong> 7.26kg</li>
+                                    <li><strong>Peso bala F:</strong> 4kg</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marcha -->
+                <div class="disciplina-category" id="marcha">
+                    <h2>Marcha Atlética</h2>
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card">
+                            <img src="img/marcha.jfif" alt="Marcha 20km">
+                            <div class="disciplina-info">
+                                <h3>Marcha 20 kilómetros</h3>
+                                <p>Disciplina de resistencia con técnica específica donde siempre debe haber contacto con el suelo.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 1:16:36 (Yusuke Suzuki)</li>
+                                    <li><strong>Récord Mundial F:</strong> 1:24:50 (Liu Hong)</li>
+                                    <li><strong>Distancia:</strong> 20 kilómetros</li>
+                                    <li><strong>Regla:</strong> Contacto permanente</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/marcha-2.webp" alt="Marcha 35km">
+                            <div class="disciplina-info">
+                                <h3>Marcha 35 kilómetros</h3>
+                                <p>La distancia más larga de marcha atlética, requiere técnica perfecta y gran resistencia.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial M:</strong> 2:21:05 (Yusuke Suzuki)</li>
+                                    <li><strong>Récord Mundial F:</strong> 2:39:42 (Inês Henriques)</li>
+                                    <li><strong>Distancia:</strong> 35 kilómetros</li>
+                                    <li><strong>Duración:</strong> 2-3 horas aprox.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combinadas -->
+                <div class="disciplina-category" id="combinadas">
+                    <h2>Pruebas Combinadas</h2>
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card">
+                            <img src="img/decatlon.webp" alt="Decatlón">
+                            <div class="disciplina-info">
+                                <h3>Decatlón (Masculino)</h3>
+                                <p>Diez pruebas en dos días que determinan al atleta más completo del mundo.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial:</strong> 9126 pts (Kevin Mayer)</li>
+                                    <li><strong>Día 1:</strong> 100m, Largo, Bala, Alto, 400m</li>
+                                    <li><strong>Día 2:</strong> 110m vallas, Disco, Pértiga, Jabalina, 1500m</li>
+                                    <li><strong>Sistema:</strong> Tablas de puntuación IAAF</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disciplina-card">
+                            <img src="img/decatlon.webp" alt="Heptatlón">
+                            <div class="disciplina-info">
+                                <h3>Heptatlón (Femenino)</h3>
+                                <p>Siete pruebas en dos días que corona a la atleta más versátil.</p>
+                                <ul class="disciplina-details">
+                                    <li><strong>Récord Mundial:</strong> 7291 pts (Jackie Joyner-Kersee)</li>
+                                    <li><strong>Día 1:</strong> 100m vallas, Alto, Bala, 200m</li>
+                                    <li><strong>Día 2:</strong> Largo, Jabalina, 800m</li>
+                                    <li><strong>Puntuación:</strong> Sistema IAAF</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- final contenido -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 27 #7-32, Santa Marta</p>
+                    <p><i class="fas fa-phone"></i> +57 (5) 421-5678</p>
+                    <p><i class="fas fa-envelope"></i> contacto@atletismomagdalena.co</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="comunicacion.html">Comunicación</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Liga de Atletismo del Magdalena &copy; 2024. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script>
+        // Funcionalidad de tabs para disciplinas
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const categories = document.querySelectorAll('.disciplina-category');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Remove active class from all tabs and categories
+                    tabBtns.forEach(tab => tab.classList.remove('active'));
+                    categories.forEach(cat => cat.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding category
+                    btn.classList.add('active');
+                    document.getElementById(category).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

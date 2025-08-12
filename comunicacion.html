@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga de Atletismo del Magdalena</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/animations.css">
+    <link rel="stylesheet" href="Estilos/responsive.css">
+    <link rel="stylesheet" href="Estilos/carrusel.css">
+    <link rel="stylesheet" href="Estilos/comunicacion.css">
+    <link rel="icon" href="img/logoligadelmagdalena.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de modo oscuro 
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>-->
+
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logoligadelmagdalena.png" alt="Logo Liga de Atletismo del Magdalena" class="logo">
+                <div class="logo-text">
+                    <h1>Liga de Atletismo</h1>
+                    <h2>Magdalena</h2>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                 <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                    <li class="menu-item"><a href="disciplinas.html">Disciplinas</a></li>
+                    <li class="menu-item"><a href="comunicacion.html">Comunicación</a></li>
+                      <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                     <!--<li class="menu-item"><a href="inscripciones.html" class="btn-inscripcion active">Inscripciones</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+     
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section class="comunicacion-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Comunicación Institucional</h1>
+                    <p>Mantente informado con las últimas noticias, eventos y logros de nuestra liga</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Seguidores</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Noticias Mensuales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Cobertura</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comunicacion-content">
+            <div class="container">
+                <div class="comunicacion-grid">
+                    <div class="main-content-area">
+                        <div class="section-header">
+                            <h2>Últimas Noticias</h2>
+                            <div class="news-filters">
+                                <button class="filter-btn active" data-filter="todas">Todas</button>
+                                <button class="filter-btn" data-filter="competencias">Competencias</button>
+                                <button class="filter-btn" data-filter="entrenamientos">Entrenamientos</button>
+                                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                            </div>
+                        </div>
+
+                        <div class="noticias-grid" id="noticias-comunicacion">
+                            <!-- Las noticias se cargarán dinámicamente -->
+                        </div>
+
+                        <div class="pagination-comunicacion">
+                            <button class="pagination-btn" id="prev-page-com" disabled>
+                                <i class="fas fa-chevron-left"></i> Anterior
+                            </button>
+                            <div class="pagination-info">
+                                <span id="current-page-com">1</span> de <span id="total-pages-com">1</span>
+                            </div>
+                            <button class="pagination-btn" id="next-page-com">
+                                Siguiente <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-content">
+                        <div class="sidebar-widget">
+                            <h3>Boletín Informativo</h3>
+                            <p>Recibe las últimas noticias y actualizaciones directamente en tu correo electrónico.</p>
+                            <form class="newsletter-form-sidebar" id="newsletter-sidebar">
+                                <input type="email" placeholder="Tu correo electrónico" required>
+                                <button type="submit" class="btn-newsletter">Suscribirse</button>
+                            </form>
+                            <div class="newsletter-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Noticias exclusivas</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Resultados de competencias</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Eventos especiales</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Síguenos en Redes</h3>
+                            <div class="social-widget">
+                                <a href="https://instagram.com/atletismomagdalena" target="_blank" class="social-link instagram-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <div class="social-info">
+                                        <span class="social-name">Instagram</span>
+                                        <span class="social-followers">2.5K seguidores</span>
+                                    </div>
+                                </a>
+                                <a href="https://facebook.com/atletismomagdalena" target="_blank" class="social-link facebook-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <div class="social-info">
+                                        <span class="social-name">Facebook</span>
+                                        <span class="social-followers">1.8K seguidores</span>
+                                    </div>
+                                </a>
+                                <a href="https://tiktok.com/@atletismomagdalena" target="_blank" class="social-link tiktok-link">
+                                    <i class="fab fa-tiktok"></i>
+                                    <div class="social-info">
+                                        <span class="social-name">TikTok</span>
+                                        <span class="social-followers">3.2K seguidores</span>
+                                    </div>
+                                </a>
+                                <a href="https://youtube.com/atletismomagdalena" target="_blank" class="social-link youtube-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <div class="social-info">
+                                        <span class="social-name">YouTube</span>
+                                        <span class="social-followers">850 suscriptores</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Próximos Eventos</h3>
+                            <div class="eventos-sidebar" id="eventos-sidebar">
+                                <!-- Los eventos se cargarán dinámicamente -->
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Galería Destacada</h3>
+                            <div class="galeria-widget">
+                                <div class="galeria-grid">
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+1" alt="Galería 1">
+                                    </div>
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+2" alt="Galería 2">
+                                    </div>
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+3" alt="Galería 3">
+                                    </div>
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+4" alt="Galería 4">
+                                    </div>
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+5" alt="Galería 5">
+                                    </div>
+                                    <div class="galeria-item">
+                                        <img src="/placeholder.svg?height=80&width=80&text=Foto+6" alt="Galería 6">
+                                    </div>
+                                </div>
+                                <a href="#" class="ver-galeria-completa">Ver galería completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comunicacion-institucional">
+            <div class="container">
+                <h2>Nuestra Estrategia de Comunicación</h2>
+                <div class="estrategia-grid">
+                    <div class="estrategia-item">
+                        <div class="estrategia-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Transparencia</h3>
+                        <p>Mantenemos informada a nuestra comunidad sobre todas las actividades, decisiones y logros de la liga.</p>
+                    </div>
+                    <div class="estrategia-item">
+                        <div class="estrategia-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Participación</h3>
+                        <p>Fomentamos la participación activa de atletas, entrenadores y aficionados en nuestras comunicaciones.</p>
+                    </div>
+                    <div class="estrategia-item">
+                        <div class="estrategia-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>Utilizamos las últimas tecnologías y plataformas digitales para llegar a nuestra audiencia.</p>
+                    </div>
+                    <div class="estrategia-item">
+                        <div class="estrategia-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Cercanía</h3>
+                        <p>Creamos contenido que conecte emocionalmente con nuestra comunidad atlética.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="/placeholder.svg?height=60&width=60&text=Logo" alt="Logo Liga de Atletismo del Magdalena">
+                    <p>Liga de Atletismo del Magdalena</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 27 #7-32, Santa Marta</p>
+                    <p><i class="fas fa-phone"></i> +57 (5) 421-5678</p>
+                    <p><i class="fas fa-envelope"></i> contacto@atletismomagdalena.co</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="liga.html">Liga</a></li>
+                        <li><a href="area-deportiva.html">Área Deportiva</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/atletismomagdalena" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@atletismomagdalena" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://facebook.com/atletismomagdalena" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/atletismomagdalena" target="_blank" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Organizado por la Liga del Magdalena &copy; 2023. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script/main.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/darkmode.js"></script>
+</body>
+</html>

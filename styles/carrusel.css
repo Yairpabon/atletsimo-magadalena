@@ -1,0 +1,48 @@
+/* Carrusel de patrocinadores */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, var(--footer-bg), transparent);
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: calc(200px * 10); /* Ajustar según número de imágenes */
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-track img {
+  height: 60px;
+  width: auto;
+  margin-right: 40px;
+  opacity: 0.7;
+  transition: var(--transition);
+  filter: brightness(0) invert(1);
+}
+
+.carousel-track img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 20s;
+  }
+
+  .carousel-track img {
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+
+/* Pausa la animación cuando se hace hover sobre el contenedor */
+.sponsors:hover .carousel-track {
+  animation-play-state: paused;
+}

@@ -1,0 +1,177 @@
+/* Animaciones para elementos */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  43% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Aplicar animaciones */
+.hero-content {
+  animation: fadeInUp 1s ease-out;
+}
+
+.service-card {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.service-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.news-card {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.news-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.news-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.news-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.about-text {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.about-image {
+  animation: fadeInRight 1s ease-out;
+}
+
+.stat-item {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.stat-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.stat-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.stat-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Hover animations */
+.btn:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+.social-icon:hover {
+  animation: bounce 0.8s ease-in-out;
+}
+
+.service-icon {
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  animation: pulse 0.6s ease-in-out;
+}
+
+/* Loading animation */
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Theme toggle animation */
+.theme-toggle label {
+  transition: var(--transition);
+}
+
+.theme-toggle input:checked + label {
+  background: var(--secondary-color);
+  animation: pulse 0.3s ease-out;
+}

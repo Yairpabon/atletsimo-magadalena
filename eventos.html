@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Liga de Atletismo del Magdalena</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="img/logoligadelmagdalena.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logoligadelmagdalena.png" alt="Logo Liga de Atletismo del Magdalena" class="logo">
+                <div class="logo-text">
+                    <h1>Liga de Atletismo</h1>
+                    <h2>Magdalena</h2>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+               <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                    <li class="menu-item"><a href="disciplinas.html">Disciplinas</a></li>
+                    <li class="menu-item"><a href="comunicacion.html">Comunicación</a></li>
+                      
+                   <!--<li class="menu-item"><a href="inscripciones.html" class="btn-inscripcion active">Inscripciones</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section class="hero-eventos">
+            <div class="container">
+                <h1>Calendario de Eventos</h1>
+                <p>Descubre todos los eventos y competencias del atletismo magdalenense</p>
+            </div>
+        </section>
+
+      <!--  <section class="calendar-section">
+            <div class="container">
+                <div class="calendar-header">
+                    <h2>Próximos Eventos</h2>
+                    <div class="calendar-controls">
+                        <button class="calendar-btn" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <span class="current-month" id="currentMonth">Enero 2024</span>
+                        <button class="calendar-btn" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                 -->
+                <div class="calendar-slider" id="calendarSlider">
+                    <div class="events-container" id="eventsContainer">
+                        <!-- Los eventos se cargan dinámicamente desde eventos.json -->
+                         <!-- Elfsight Event Calendar | Untitled Event Calendar -->
+                        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                        <div class="elfsight-app-70a7c9f7-e935-4c5e-b772-a24372fc4cf4" data-elfsight-app-lazy></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-events">
+            <div class="container">
+                <h2>Eventos Destacados</h2>
+                <div class="featured-grid">
+                    <div class="featured-event">
+                        <img src="/placeholder.svg?height=200&width=400&text=Maratón Santa Marta" alt="Maratón Santa Marta">
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="day">02</span>
+                                <span class="month">FEB</span>
+                            </div>
+                            <div class="event-info">
+                                <h3>Maratón de Santa Marta 2024</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Centro Histórico, Santa Marta</p>
+                                <p><i class="fas fa-clock"></i> 6:00 AM</p>
+                                <div class="event-categories">
+                                    <span class="category">42K</span>
+                                    <span class="category">21K</span>
+                                    <span class="category">10K</span>
+                                </div>
+                                <a href="evento-detalle.html?id=1" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-event">
+                        <img src="/placeholder.svg?height=200&width=400&text=Campeonato Regional" alt="Campeonato Regional">
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">MAR</span>
+                            </div>
+                            <div class="event-info">
+                                <h3>Campeonato Regional de Pista</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Estadio Municipal</p>
+                                <p><i class="fas fa-clock"></i> 8:00 AM - 6:00 PM</p>
+                                <div class="event-categories">
+                                    <span class="category">Juvenil</span>
+                                    <span class="category">Senior</span>
+                                    <span class="category">Master</span>
+                                </div>
+                                <a href="evento-detalle.html?id=2" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- final contenido -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 27 #7-32, Santa Marta</p>
+                    <p><i class="fas fa-phone"></i> +57 (5) 421-5678</p>
+                    <p><i class="fas fa-envelope"></i> contacto@atletismomagdalena.co</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="comunicacion.html">Comunicación</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Liga de Atletismo del Magdalena &copy; 2024. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/darkmode.js"></script>
+</body>
+</html>
