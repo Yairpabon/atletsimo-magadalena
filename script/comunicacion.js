@@ -71,9 +71,9 @@ function inicializarModoOscuro() {
 
 async function cargarTodasLasNoticias() {
   try {
-    const response = await fetch("eventos.json")
+    const response = await fetch("noticias.json")
     const data = await response.json()
-    todasLasNoticias = data.eventos.filter((evento) => evento.estado === "publicado")
+    todasLasNoticias = data.noticias.filter((noticia) => noticia.estado === "publicada")
     noticiasFiltradas = [...todasLasNoticias]
     mostrarNoticias()
     actualizarPaginacion()

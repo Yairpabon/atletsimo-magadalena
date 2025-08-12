@@ -1,0 +1,70 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Magdalena brilla en Campeonato Nacional",
+      "resumen": "Nuestros atletas lograron 5 medallas de oro en el reciente campeonato nacional de atletismo celebrado en Bogotá.",
+      "contenido": "La Liga de Atletismo del Magdalena tuvo una participación destacada en el Campeonato Nacional de Atletismo 2023, celebrado en el Estadio El Campín de Bogotá. Nuestros atletas demostraron su excelente preparación al obtener 5 medallas de oro, 3 de plata y 2 de bronce.\n\nEntre los destacados se encuentra María Rodríguez, quien estableció un nuevo récord departamental en los 400 metros planos con un tiempo de 52.34 segundos. Por su parte, Carlos Mendoza dominó la prueba de salto largo con una marca de 7.85 metros.\n\nEste resultado consolida al Magdalena como una de las potencias del atletismo nacional y nos motiva a seguir trabajando por la excelencia deportiva.",
+      "fecha": "2023-06-15",
+      "categoria": "competencias",
+      "autor": "Jorge Herrera",
+      "imagen": "https://tse3.mm.bing.net/th/id/OIP.tlagYfCJRyn7lFWDvvE00gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "estado": "publicada"
+    },
+    {
+      "id": 2,
+      "titulo": "Nuevo programa de entrenamiento juvenil",
+      "resumen": "Iniciamos un programa especial para talentos entre 12 y 15 años con metodología internacional.",
+      "contenido": "La Liga de Atletismo del Magdalena se complace en anunciar el lanzamiento de su nuevo programa de entrenamiento juvenil 'Semillero de Campeones', dirigido a jóvenes atletas entre 12 y 15 años.\n\nEste programa innovador implementa metodologías de entrenamiento utilizadas en países líderes del atletismo mundial, adaptadas a las condiciones y características de nuestros jóvenes talentos.\n\nLas inscripciones están abiertas hasta el 30 de junio y los entrenamientos iniciarán el 15 de julio en nuestras instalaciones del Estadio Eduardo Santos. Los interesados pueden obtener más información en nuestras oficinas o a través de nuestros canales digitales.",
+      "fecha": "2023-06-10",
+      "categoria": "entrenamientos",
+      "autor": "Roberto Silva",
+      "imagen": "https://tse3.mm.bing.net/th/id/OIP.tlagYfCJRyn7lFWDvvE00gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "estado": "publicada"
+    },
+    {
+      "id": 3,
+      "titulo": "Convenio con Universidad del Magdalena",
+      "resumen": "Firmamos un importante convenio para becas deportivas y apoyo académico a nuestros atletas.",
+      "contenido": "En una ceremonia realizada en el campus de la Universidad del Magdalena, se firmó un convenio de cooperación que beneficiará directamente a los atletas de nuestra liga.\n\nEste acuerdo incluye:\n- Becas deportivas para atletas destacados\n- Acceso a laboratorios de ciencias del deporte\n- Apoyo nutricional y médico especializado\n- Programas de formación académica flexible\n\nEl convenio representa un paso importante en nuestro compromiso de formar atletas integrales, que destaquen tanto en el deporte como en su formación académica y personal.",
+      "fecha": "2023-06-05",
+      "categoria": "eventos",
+      "autor": "Carlos Mendoza",
+      "imagen": "/placeholder.svg?height=300&width=500&text=Convenio+Universidad",
+      "estado": "publicada"
+    },
+    {
+      "id": 4,
+      "titulo": "Preparativos para el Campeonato Departamental",
+      "resumen": "Ultimos detalles para el campeonato que se realizará el próximo mes en Santa Marta.",
+      "contenido": "Los preparativos para el Campeonato Departamental de Atletismo 2023 están en su fase final. El evento se realizará los días 15 y 16 de julio en el Estadio Eduardo Santos de Santa Marta.\n\nEsperamos la participación de más de 300 atletas de todos los municipios del departamento, compitiendo en las diferentes categorías y modalidades del atletismo.\n\nLas inscripciones permanecen abiertas hasta el 8 de julio. Invitamos a todos los atletas del departamento a participar en esta importante competencia que servirá como clasificatorio para eventos nacionales.",
+      "fecha": "2023-06-20",
+      "categoria": "competencias",
+      "autor": "María González",
+      "imagen": "/placeholder.svg?height=300&width=500&text=Campeonato+Departamental",
+      "estado": "borrador"
+    },
+    {
+      "id": 5,
+      "titulo": "Inauguración de nueva pista de entrenamiento",
+      "resumen": "Nueva pista sintética de última generación para mejorar las condiciones de entrenamiento.",
+      "contenido": "Con gran orgullo anunciamos la inauguración de nuestra nueva pista de entrenamiento con superficie sintética de última generación, que cumple con todos los estándares internacionales de la IAAF.\n\nEsta moderna instalación permitirá a nuestros atletas entrenar en condiciones óptimas durante todo el año, sin depender de las condiciones climáticas.\n\nLa pista cuenta con 8 carriles, zonas especializadas para saltos y lanzamientos, y un moderno sistema de iluminación que permite entrenamientos nocturnos.\n\nLa inauguración oficial se realizará el 25 de junio con una jornada deportiva abierta al público.",
+      "fecha": "2023-06-18",
+      "categoria": "eventos",
+      "autor": "Roberto Silva",
+      "imagen": "/placeholder.svg?height=300&width=500&text=Nueva+Pista",
+      "estado": "publicada"
+    },
+    {
+      "id": 6,
+      "titulo": "prueba ",
+      "resumen": "prueba",
+      "contenido": "prueba",
+      "fecha": "2023-06-18",
+      "categoria": "eventos",
+      "autor": "Roberto Silva",
+      "imagen": "https://live.staticflickr.com/4044/4501586971_0ca5d6e550_b.jpg",
+      "estado": "publicada"
+    }
+  ]
+}
